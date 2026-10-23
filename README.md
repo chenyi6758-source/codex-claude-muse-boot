@@ -10,7 +10,9 @@ Inspired by the viral DeepSeek Harness boot-animation plugins, this project recr
 
 ## Demo
 
-Open `index.html` in any modern browser. No build step, no dependencies, no server needed. The three stages autoplay side by side and can be replayed, paused and speed-shifted (0.5× / 1× / 2×) individually or in sync.
+**▶ Live demo: https://chenyi6758-source.github.io/ai-boot-animations/**
+
+Or open `index.html` in any modern browser. No build step, no dependencies, no server needed. The three stages autoplay side by side and can be replayed, paused and speed-shifted (0.5× / 1× / 2×) individually or in sync.
 
 ## Features
 
