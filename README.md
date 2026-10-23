@@ -10,6 +10,10 @@ English | [简体中文](README.zh-CN.md)
 [![License](https://img.shields.io/github/license/chenyi6758-source/codex-claude-muse-boot?style=flat)](LICENSE)
 [![Live demo](https://img.shields.io/badge/Live%20demo-demo.cyruscy.me-brightgreen)](https://demo.cyruscy.me/)
 
+**▶ Watch it move — then try it live: [demo.cyruscy.me](https://demo.cyruscy.me/) · or grab the single file from [Releases](https://github.com/chenyi6758-source/codex-claude-muse-boot/releases)**
+
+![Demo — Codex, Claude and Muse character splashes](assets/demo.gif)
+
 A set of "OS boot ceremony" splash animations for AI tools — as **character splashes**: an illustrated character fades in, a script signature and a one-line motto appear, the hand-drawn mark traces itself into shape, metallic title letters land, a terminal boot log scrolls, and the chat box rises into the final frame. Three editions, one file, everything generated in code.
 
 All marks are hand-drawn, same-style graphics; no official assets are used.
@@ -18,7 +22,7 @@ All marks are hand-drawn, same-style graphics; no official assets are used.
 
 **▶ Live demo: https://demo.cyruscy.me/**
 
-Or open `index.html` in any modern browser. No build step, no dependencies, no server needed. The three stages autoplay side by side and can be replayed, paused and speed-shifted (0.5× / 1× / 2×) individually or in sync. Each stage runs ≈ 6.8 s; the whole page is one ~86 KB HTML file plus three character artworks (1920 × 1280).
+Or open `index.html` in any modern browser. No build step, no dependencies, no server needed. The three stages autoplay side by side and can be replayed, paused and speed-shifted (0.5× / 1× / 2×) individually or in sync. Each stage runs ≈ 6.8 s; the whole page is one ~91 KB HTML file plus three character artworks (1920 × 1280).
 
 | Muse — "Cyrus" | Codex | Claude |
 |---|---|---|
@@ -36,6 +40,7 @@ The original logo-only version is preserved at [`index-v1-original.html`](index-
   - Live image search via **Wikimedia Commons** (default) and **Openverse** (backup) — both free, no API key; click a result to use it as the boot background
   - **Upload & animate**: drop your own image or video, pick one of 10 motion presets and a duration — your media becomes the boot animation, processed locally in memory, never uploaded anywhere
   - **Steam Wallpaper Engine import**: paste a Workshop link to parse its item ID, get the local path (`steamapps/workshop/content/431960/<ID>`) and a `steam://` deep link, then drop the downloaded wallpaper file into the upload zone
+  - **Poster generator**: pick an edition, type your own signature and motto, and download a personalized 1920×1080 boot-splash PNG — rendered locally on a canvas, ready as wallpaper, lock screen or launcher cover
 
 ## On Windows & macOS
 

@@ -10,6 +10,10 @@
 [![License](https://img.shields.io/github/license/chenyi6758-source/codex-claude-muse-boot?style=flat)](LICENSE)
 [![在线演示](https://img.shields.io/badge/在线演示-demo.cyruscy.me-brightgreen)](https://demo.cyruscy.me/)
 
+**▶ 先看动图，再打开玩：[demo.cyruscy.me](https://demo.cyruscy.me/) · 或从 [Releases](https://github.com/chenyi6758-source/codex-claude-muse-boot/releases) 下载单文件带走**
+
+![演示——Codex、Claude、Muse 三版角色闪屏](assets/demo.gif)
+
 一套给 AI 工具的“操作系统开机”仪式，做成**角色闪屏**风：角色立绘缓缓淡入、花体签名与一句标语浮现、标志描边成形、金属大字逐字显现、终端风 loading 日志滚动、最后聊天框升起定版。三个版本、一个文件、全部效果由代码生成。
 
 所有标志均为手绘同风格图形，未使用任何官方素材。
@@ -18,7 +22,7 @@
 
 **▶ 在线演示：https://demo.cyruscy.me/**
 
-或用任意现代浏览器打开 `index.html`。无需构建、无依赖、无需服务器。三个舞台并排自动播放，可单独或同步重播、暂停、变速（0.5× / 1× / 2×）。单版时长约 6.8 秒；整页是一个约 86 KB 的 HTML 文件加三张角色立绘（1920 × 1280）。
+或用任意现代浏览器打开 `index.html`。无需构建、无依赖、无需服务器。三个舞台并排自动播放，可单独或同步重播、暂停、变速（0.5× / 1× / 2×）。单版时长约 6.8 秒；整页是一个约 91 KB 的 HTML 文件加三张角色立绘（1920 × 1280）。
 
 | Muse ——「Cyrus」 | Codex | Claude |
 |---|---|---|
@@ -36,6 +40,7 @@
   - 在线搜图直连 **Wikimedia Commons**（默认）和 **Openverse**（备用），均免费、免 API key，点一张即套为开机背景
   - **上传动效化**：拖入自己的图片或视频，选 10 种动效预设和时长，你的素材立刻变成开机动画；全程在本机内存处理，不经过任何服务器
   - **Steam Wallpaper Engine 导入**：粘贴工坊链接自动解析物品 ID，给出本地路径（`steamapps/workshop/content/431960/<ID>`）和 `steam://` 深链一键在 Steam 客户端打开，下载后把壁纸文件拖进上传区即可使用
+  - **开机图生成**：选一版角色，填上你自己的签名和标语，一键在本机生成 1920×1080 的专属开机图 PNG——当壁纸、锁屏或启动器封面都行
 
 ## 在 Windows 与 macOS 上
 
