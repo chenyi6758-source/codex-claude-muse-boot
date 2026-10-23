@@ -10,9 +10,9 @@
 [![License](https://img.shields.io/github/license/chenyi6758-source/codex-claude-muse-boot?style=flat)](LICENSE)
 [![在线演示](https://img.shields.io/badge/在线演示-demo.cyruscy.me-brightgreen)](https://demo.cyruscy.me/)
 
-灵感来自 DeepSeek Harness（DSH）上爆火的开机动画插件和 dragon-codex-boot 启动器。这个项目把那套“操作系统开机”仪式带给没有开放插件系统的 AI 工具，并做成**角色闪屏**风：角色立绘缓缓淡入、花体签名与一句标语浮现、标志描边成形、金属大字逐字显现、终端风 loading 日志滚动、最后聊天框升起定版。
+一套给 AI 工具的“操作系统开机”仪式，做成**角色闪屏**风：角色立绘缓缓淡入、花体签名与一句标语浮现、标志描边成形、金属大字逐字显现、终端风 loading 日志滚动、最后聊天框升起定版。三个版本、一个文件、全部效果由代码生成。
 
-> **非官方粉丝概念作品。** 与 OpenAI、Anthropic、Meta 无关。所有标志均为手绘同风格图形，未使用任何官方素材。Codex、Claude、Muse 都没有开放开机动画插件接口——这是一个可直接播放的概念演示，也是后续做启动器 / 桌面端集成的起点。
+所有标志均为手绘同风格图形，未使用任何官方素材。
 
 ## 演示
 
@@ -39,21 +39,14 @@
 
 ## 在 Windows 与 macOS 上
 
-本页本身与平台无关——任意现代浏览器、两个系统都能直接打开，零安装。真要给官方应用配上启动动画，两边的路线不同（下面的原生项目也是这么分的）：
+本页本身与平台无关——任意现代浏览器、两个系统都能直接打开，零安装。真要给桌面应用配上启动动画，两边的可行路线不同：
 
-- **Windows** —— 深度集成路线。[dragon-codex-boot](https://github.com/yushua0808-cpu/dragon-codex-boot) 是原生 Codex 启动器，替换应用快捷方式（带可还原备份）并把真实窗口嵌进动画；DSH 系列开机插件支持换成自己的视频，把本页舞台录制/导出的片段放进去即可；Wallpaper Engine 壁纸可用上方内置导入转成开机背景。
-- **macOS** —— 保守覆盖路线。原生启动器（dragon-codex-boot 另有独立的 Swift 版）用自己的窗口播放、淡出交接，不改官方应用、不动 Dock、不申请录屏/辅助功能权限；未签名应用首次启动需右键 → 打开（Gatekeeper）。Mac 上零安装路线就是上面的在线演示。
-
-## 同类项目
-
-- [NativeDog1/dsh-boot-animation](https://github.com/NativeDog1/dsh-boot-animation) —— DSH 开机插件原版（324★），支持换自己的视频
-- [lxj5820/dsh-boot-animation](https://github.com/lxj5820/dsh-boot-animation) —— 带片尾溶解进应用的 DSH 插件（254★）
-- [yushua0808-cpu/dragon-codex-boot](https://github.com/yushua0808-cpu/dragon-codex-boot) —— Codex 原生启动器（Windows & macOS），龙女角色闪屏（263★）
-- [yannicksong0106/dsh-550c-boot](https://github.com/yannicksong0106/dsh-550c-boot) —— 产品化程度最高的 DSH 开机动画，带主题与开机音乐（180★）
+- **Windows** —— 可以走深度集成：启动器类工具全屏播完片头再把应用交接出来；支持自定义视频的开机动画插件可以直接放本页舞台录制/导出的片段；Wallpaper Engine 壁纸可用上方内置导入转成开机背景。
+- **macOS** —— 覆盖路线：启动器用自己的窗口播放、淡出交接，不改动应用本身；未签名应用首次启动需右键 → 打开（Gatekeeper）。Mac 上零安装路线就是上面的在线演示。
 
 ## 为什么做这个
 
-在 GitHub 上，开机动画插件只在平台开放可安装时才爆起来：DeepSeek Harness 有一整个集群（原版 324★），Codex 有 dragon-codex-boot（263★）和几个 0–2 星的尝试，Claude 只有三个小项目，Muse 一个都没有。这个仓库把三家的概念收拢到一处，并保持它可魔改：单文件、代码可读、一切效果由代码生成。
+AI 工具的开机动画是个很散的 niche：一个平台有一簇插件，Codex 有零星一两个启动器，Claude 几乎空白，Muse 一个都没有。这个仓库把三家的概念收拢到一处，并保持它可魔改：单文件、代码可读、一切效果由代码生成。
 
 ## 路线图
 

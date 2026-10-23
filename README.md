@@ -10,9 +10,9 @@ English | [简体中文](README.zh-CN.md)
 [![License](https://img.shields.io/github/license/chenyi6758-source/codex-claude-muse-boot?style=flat)](LICENSE)
 [![Live demo](https://img.shields.io/badge/Live%20demo-demo.cyruscy.me-brightgreen)](https://demo.cyruscy.me/)
 
-Inspired by the viral DeepSeek Harness (DSH) boot-animation plugins and the dragon-codex-boot launcher, this project brings the "OS boot ceremony" to the AI tools that *don't* have an open plugin system — as **character splashes**: an illustrated character fades in, a script signature and a one-line motto appear, the hand-drawn mark traces itself into shape, metallic title letters land, a terminal boot log scrolls, and the chat box rises into the final frame.
+A set of "OS boot ceremony" splash animations for AI tools — as **character splashes**: an illustrated character fades in, a script signature and a one-line motto appear, the hand-drawn mark traces itself into shape, metallic title letters land, a terminal boot log scrolls, and the chat box rises into the final frame. Three editions, one file, everything generated in code.
 
-> **Unofficial fan-made concept.** Not affiliated with OpenAI, Anthropic or Meta. All marks are hand-drawn, same-style graphics; no official assets are used. Codex, Claude and Muse have no open boot-animation plugin API — this is a playable concept demo and a starting point for launcher/desktop integrations.
+All marks are hand-drawn, same-style graphics; no official assets are used.
 
 ## Demo
 
@@ -39,21 +39,14 @@ The original logo-only version is preserved at [`index-v1-original.html`](index-
 
 ## On Windows & macOS
 
-This page itself is platform-neutral — any modern browser, either OS, nothing to install. To actually *use* a splash with the real apps, the routes differ by platform (the native projects below document the same split):
+This page itself is platform-neutral — any modern browser, either OS, nothing to install. If you want a splash in front of the real desktop apps, the practical routes differ by platform:
 
-- **Windows** — the deep-integration platform. [dragon-codex-boot](https://github.com/yushua0808-cpu/dragon-codex-boot) is a native Codex launcher that replaces the app shortcut (with restorable backups) and embeds the live window; DSH boot plugins accept your own video clip, so a stage recorded/exported from this page can serve as the clip; Wallpaper Engine wallpapers can be turned into a boot background with the built-in import above.
-- **macOS** — the conservative-overlay platform. Native launchers (dragon-codex-boot ships a separate Swift build) run their own window and hand off with a fade — they don't modify the official app, the Dock, or ask for Screen Recording / Accessibility permissions. Unsigned local apps need a first-launch right-click → Open (Gatekeeper). The web demo above is the zero-install route on Mac.
-
-## Related projects
-
-- [NativeDog1/dsh-boot-animation](https://github.com/NativeDog1/dsh-boot-animation) — the original DSH boot plugin (324★), bring-your-own video
-- [lxj5820/dsh-boot-animation](https://github.com/lxj5820/dsh-boot-animation) — DSH plugin with tail cross-dissolve into the app (254★)
-- [yushua0808-cpu/dragon-codex-boot](https://github.com/yushua0808-cpu/dragon-codex-boot) — native Codex startup launcher for Windows & macOS, dragon-girl character splash (263★)
-- [yannicksong0106/dsh-550c-boot](https://github.com/yannicksong0106/dsh-550c-boot) — productized DSH boot splash with themes and boot music (180★)
+- **Windows** — deep integration is possible: launcher-style tools can sit in front of the app (fullscreen intro, then hand off), boot-animation plugins that accept a custom video clip can play a stage recorded/exported from this page, and Wallpaper Engine wallpapers can be turned into a boot background with the built-in import above.
+- **macOS** — the overlay route: a launcher plays the intro in its own window and hands off with a fade, without modifying the app itself. Unsigned local apps need a first-launch right-click → Open (Gatekeeper). The web demo above is the zero-install route on Mac.
 
 ## Why
 
-On GitHub, boot-animation plugins exploded only where a platform made them installable: DeepSeek Harness has a whole cluster (the original at 324★), Codex has dragon-codex-boot (263★) plus a handful of 0–2★ attempts, Claude has three tiny projects, and Muse has none. This repo collects the concept for all three in one place and keeps it hackable: one file, readable code, everything generated in code.
+Boot animations for AI tools are a scattered niche: a cluster of plugins exists for one harness, a launcher or two for Codex, almost nothing for Claude, and nothing at all for Muse. This repo collects the concept for all three in one place and keeps it hackable: one file, readable code, everything generated in code.
 
 ## Roadmap
 
